@@ -1,0 +1,26 @@
+<!-- ***** XC HELP SCREEN 1280x720 ***** 21/10/2018 -->
+<screen name="xc_help" position="0,0" size="1280,720" backgroundColor="#41000000" flags="wfNoBorder" title="Xtream-Config">
+	<ePixmap position="0,0" size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/hd/fullpanel1080.jpg" zPosition="-1" />
+	<ePixmap position="20,75" size="1240,2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/hd/sep2.png" alphatest="blend" scale="1" zPosition="3" />
+	<ePixmap position="35,20" size="84,50" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/hd/xc.png" alphatest="blend" zPosition="3" />
+	<eLabel text="Help " position="140,27" size="300,40" font="Regular;32" halign="left" valign="center" foregroundColor="#ffffff" backgroundColor="#101010" transparent="1" zPosition="1" />
+    	<!-- Clock -->
+	<widget source="global.CurrentTime" render="Label" position="1000,15" size="250,60" font="Regular;24" halign="right" valign="center" foregroundColor="#808080" backgroundColor="#101010" transparent="1" zPosition="1">
+		<convert type="ClockToText">Format %A %d %B %H:%M:%S</convert>
+	</widget>  
+	<!-- PIG CHANNEL --> 
+	<eLabel position="33,86" size="480,282" backgroundColor="#1b3c85" />
+	<eLabel position="37,90" size="472,274" backgroundColor="#20000000" />
+	<eLabel position="41,94" size="464,266" backgroundColor="#FFFFFFFF" />
+	<widget source="session.VideoPicture" render="Pig" position="48,100" size="453,255" backgroundColor="#AA001842" transparent="1" zPosition="2" />
+    	<!-- Config -->
+  	<widget name="infocredits" position="800,410" size="430,300" font="Regular;20" halign="center" foregroundColor="#b0b0b0" backgroundColor="#000000" transparent="1" zPosition="1" />
+	<eLabel text="MAIN " position="525,80" size="300,50" font="Regular;30" halign="left" foregroundColor="#ffffff" backgroundColor="#101010" transparent="1" zPosition="1" />
+	<widget name="helpdesc" position="520,127" size="758,292" font="Console;17" halign="left" foregroundColor="yellow" backgroundColor="#000000" transparent="1" zPosition="1" />
+	<eLabel text="SETTINGS " position="35,375" size="300,50" font="Regular;28" halign="left" foregroundColor="#ffffff" backgroundColor="#101010" transparent="1" zPosition="1" />
+	<widget name="helpdesc2" position="30,410" size="758,240" font="Console;17" halign="left" foregroundColor="yellow" backgroundColor="#000000" transparent="1" zPosition="1" />
+        <!-- Key Colors -->
+	<ePixmap position="30,655" size="1240,2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/hd/sep2.png" alphatest="blend" scale="1" zPosition="3" />
+	<eLabel position="30,670" size="5,25" backgroundColor="red" zPosition="1" />
+	<widget name="key_red" position="45,670" size="200,30" font="Regular;20" halign="center" foregroundColor="#ffffff" backgroundColor="#101010" transparent="1" zPosition="1" />
+</screen>

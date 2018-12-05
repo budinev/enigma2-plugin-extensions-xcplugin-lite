@@ -1,0 +1,22 @@
+<!-- ***** EPG MENU 1920x1080 ***** 17-10-2018 /-->
+<screen name="xcEPG" position="0,0" size="1920,1080" title="EPG" backgroundColor="#FF000000" flags="wfNoBorder">
+	<ePixmap position="0,0"    size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/fhd/fullpanel1080.jpg" zPosition="-1" />
+	<ePixmap position="45,32"  size="108,65"    pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/fhd/xc.png"       zPosition="3" />
+	<eLabel text="EPG" position="170,20" size="300,90" font="Regular;38" halign="left" valign="center" foregroundColor="#ffffff" backgroundColor="#101010" transparent="1" zPosition="1" />
+	<ePixmap position="30,103" size="1840,2"    pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/fhd/sep2.png"     zPosition="3" />
+	<!-- Clock -->
+	<widget source="global.CurrentTime" render="Label" position="1470,20" size="400,80" font="Regular;34" halign="right" valign="center" foregroundColor="#808080" backgroundColor="#101010" transparent="1" zPosition="1">
+		<convert type="ClockToText">Format %A %d %B %H:%M:%S</convert>
+	</widget>
+	<!-- PIG CHANNEL --> 
+	<eLabel position="50,120" size="720,423" backgroundColor="#1b3c85" />
+	<eLabel position="55,125" size="710,413" backgroundColor="#20000000" />
+	<eLabel position="65,135" size="690,393" backgroundColor="#FFFFFFFF" />
+	<widget source="session.VideoPicture" render="Pig" position="72,140" size="680,383" backgroundColor="#AA001842" transparent="1"  zPosition="2" />
+   	<widget name="info"       position="790,120" size="1080,50" font="Regular;36" halign="center" valign="center" foregroundColor="green" backgroundColor="#202020" transparent="0" zPosition="1" />		
+	<widget name="text_clear" position="790,180" size="1080,800" font="Regular;30" halign="left" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" zPosition="1" />
+	<!-- Buttons Colors -->
+	<ePixmap position="30,990" size="1840,2"    pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/fhd/sep2.png"     zPosition="3" />
+	<eLabel position="50,1010" size="10,40" backgroundColor="red" zPosition="1" />
+	<widget name="key_red" position="75,1010" size="200,40" font="Regular;32" halign="left" foregroundColor="#ffffff" backgroundColor="#101010" transparent="1" zPosition="1" />
+</screen>

@@ -1,0 +1,37 @@
+<!-- ***** PLAYLIST FOLDER 1920x1080 ***** 17-10-2018 /-->
+<screen name="nStreamTasksScreen" position="0,0" size="1920,1080" title="Video Download List" backgroundColor="#FF000000" flags="wfNoBorder">
+	<ePixmap position="0,0"    size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/fhd/fullpanel1080.jpg" zPosition="-1" />
+	<ePixmap position="30,103" size="1840,2"    pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/fhd/sep2.png"     zPosition="3" />
+	<ePixmap position="45,32"  size="108,65"    pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/fhd/xc.png" alphatest="blend" zPosition="3" />
+	<eLabel text="Media Folder" position="180,20" size="500,90" font="Regular;40" halign="left" valign="center" foregroundColor="yellow" backgroundColor="#101010" transparent="1" zPosition="1" />
+	<!-- Clock -->
+	<widget source="global.CurrentTime" render="Label" position="1470,20" size="400,80" font="Regular;34" halign="right" valign="center" foregroundColor="#808080" backgroundColor="#101010" transparent="1" zPosition="1">
+		<convert type="ClockToText">Format %A %d %B %H:%M:%S</convert>
+	</widget>
+	<!-- PIG CHANNEL --> 
+	<eLabel position="50,120" size="720,423" backgroundColor="#1b3c85" />
+	<eLabel position="55,125" size="710,413" backgroundColor="#20000000" />
+	<eLabel position="65,135" size="690,393" backgroundColor="#FFFFFFFF" />
+	<widget source="session.VideoPicture" render="Pig" position="72,140" size="680,383" backgroundColor="#AA001842" transparent="1"  zPosition="2" />
+	<!-- Movie List -->
+	<widget source="movielist" render="Listbox" position="790,120" size="1090,840" scrollbarMode="showOnDemand" transparent="1" zPosition="1">
+		<convert type="TemplatedMultiContent">
+			{"template": [
+				MultiContentEntryText(pos = (5, 5),        size = (680, 50), font=1, flags = RT_HALIGN_LEFT, text = 1),                  # index 1 is the name
+				MultiContentEntryText(pos = (680, 5),      size = (150, 50), font=1, color=0xfed46e, flags = RT_HALIGN_RIGHT, text = 2), # index 2 is the state
+				MultiContentEntryProgress(pos = (860, 10), size = (100, 20), percent = -3),                                              # index 3 should be progress
+				MultiContentEntryText(pos = (960, 5),      size = (100, 50), font=1, color=0x3faaff, flags = RT_HALIGN_RIGHT, text = 4), # index 4 is the percentage
+				],
+				"fonts": [gFont("Regular", 26),gFont("Regular", 26)],
+				"itemHeight": 40
+			}
+		</convert>
+	</widget>
+	<!-- Buttons -->
+	<!-- Buttons Colors -->
+	<ePixmap position="30,990" size="1840,2"    pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/fhd/sep2.png"     zPosition="3" />
+	<eLabel position="50,1010" size="10,40" backgroundColor="red" zPosition="1" />
+	<widget name="key_red" position="75,1010" size="250,40" font="Regular;32" halign="left" foregroundColor="#ffffff" backgroundColor="#101010" transparent="1" zPosition="1" />
+	<eLabel position="340,1010" size="10,40" backgroundColor="green" zPosition="1" />
+	<widget name="key_green" position="365,1010" size="250,40" font="Regular;32" halign="left" foregroundColor="#ffffff" backgroundColor="#101010" transparent="1" zPosition="1" />
+</screen>

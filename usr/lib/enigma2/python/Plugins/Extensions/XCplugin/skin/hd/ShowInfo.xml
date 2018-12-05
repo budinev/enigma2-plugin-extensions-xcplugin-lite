@@ -1,0 +1,18 @@
+<!-- ***** SHOWPAGESCREEN 1280x720 ***** 20/10/2018 -->
+<screen name="ShowPageHD" position="0,0" size="450,720" title="Xc Info" flags="wfNoBorder" backgroundColor="#20000000">
+	<ePixmap position="0,0"    size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/hd/fp.jpg" zPosition="-1" />
+	<ePixmap position="35,20"  size="84,50"    pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/hd/xc.png" alphatest="blend" zPosition="3" />
+	<eLabel text="User Info" position="50,12" size="300,70" font="Regular;30" valign="center" halign="center" foregroundColor="#ffffff" backgroundColor="#10202020" transparent="1" zPosition="10" />
+	<ePixmap position="20,80"  size="400,2"    pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/hd/msep.png" alphatest="blend" scale="1" zPosition="10" />
+	<ePixmap position="35,90"  size="82,90"    pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/hd/user.png" alphatest="blend" zPosition="3" />
+	<widget name="check"       position="130,135" size="500,30"  font="Regular;26" halign="left" foregroundColor="#ffffff" backgroundColor="#101010" transparent="1" zPosition="4" />
+	<widget name="exp"         position="35,190"  size="700,30"  font="Regular;22" halign="left" foregroundColor="red"     backgroundColor="#101010" transparent="1" zPosition="4" />
+	<widget name="max_connect" position="35,220"  size="700,30"  font="Regular;22" halign="left" foregroundColor="#ffffff" backgroundColor="#101010" transparent="1" zPosition="4" />
+	<widget name="active_cons" position="35,250"  size="700,30"  font="Regular;22" halign="left" foregroundColor="#5ad200" backgroundColor="#101010" transparent="1" zPosition="4" />
+	<ePixmap position="35,300"  size="66,100"    pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/hd/scan-c.png" alphatest="blend" zPosition="3" />
+	<widget name="info"        position="35,350"  size="700,200" font="Regular;22" foregroundColor="#7bd7f7" backgroundColor="#40000000" transparent="1" halign="left" valign="center" zPosition="4" />
+	<!-- Buttons Colors -->
+	<ePixmap position="30,655" size="400,2"  pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/hd/msep.png" alphatest="blend" scale="1" zPosition="10" />
+	<eLabel position="30,670" size="5,25" backgroundColor="red" zPosition="1" />
+	<widget name="key_red" position="45,670" size="200,30" font="Regular;20" halign="left" foregroundColor="#ffffff" backgroundColor="#101010" transparent="1" zPosition="1" />
+</screen>

@@ -1,0 +1,25 @@
+<!-- ***** SHOWPAGE MENU 1920x1080 ***** 17-10-2018 /-->
+<screen name="ShowPageFHD" position="0,0" size="740,1080" title="User Info" flags="wfNoBorder" backgroundColor="transparent">
+	<ePixmap position="0,0" size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/fhd/fp.jpg" zPosition="-1" />
+	<ePixmap position="30,110" size="675,2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/fhd/sep2.png" scale="1" alphatest="blend" zPosition="3" />
+	<ePixmap position="45,32" size="108,65" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/fhd/xc.png" alphatest="blend" zPosition="3" />
+	<eLabel text="XC Plugin" position="180,28" size="350,70" font="Regular;46" halign="left" valign="center" foregroundColor="#ffff00" backgroundColor="#000000" transparent="1" zPosition="1" />
+	<!-- Clock -->
+	<widget source="global.CurrentTime" render="Label" position="1470,20" size="400,80" font="Regular;34" halign="right" valign="center" foregroundColor="#808080" backgroundColor="#101010" transparent="1" zPosition="1">
+		<convert type="ClockToText">Format %A %d %B %H:%M:%S</convert>
+	</widget>
+	<ePixmap position="60,160" size="120,102" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/fhd/user.png" alphatest="blend" zPosition="10" />
+	<widget name="check" position="200,205" size="500,90" font="Regular;36" halign="left" valign="center" foregroundColor="#50a4fe" backgroundColor="#101010" transparent="1" zPosition="2" />
+	<ePixmap position="45,280" size="675,2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/fhd/sep2.png" scale="1" alphatest="blend" zPosition="3" />
+	<widget name="exp" position="60,300" size="600,90" font="Regular;34" halign="left" valign="center" foregroundColor="#fe3d34" backgroundColor="#101010" transparent="1" zPosition="2" />
+	<widget name="max_connect" position="60,360" size="500,90" font="Regular;36" halign="left" valign="center" foregroundColor="yellow" backgroundColor="#101010" transparent="1" zPosition="2" />
+	<widget name="active_cons" position="60,420" size="500,90" font="Regular;36" halign="left" valign="center" foregroundColor="green" backgroundColor="#101010" transparent="1" zPosition="2" />
+	<ePixmap position="45,530" size="675,2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/fhd/sep2.png" scale="1" alphatest="blend" zPosition="3" />
+	<ePixmap position="60,570" size="74,90" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/fhd/scan-c.png" alphatest="blend" zPosition="10" />
+	<eLabel text="Data Connection" position="160,620" size="450,50" font="Regular;36" halign="left" foregroundColor="#ffffff" backgroundColor="#000000" transparent="1" zPosition="1" />
+	<ePixmap position="45,680" size="675,2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/fhd/sep2.png" scale="1" alphatest="blend" zPosition="3" />
+	<widget name="info" position="60,710" size="600,400" font="Regular;36" halign="left" foregroundColor="#50a4fe" backgroundColor="#101010" transparent="1" zPosition="4" />
+	<ePixmap position="45,980" size="675,2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/fhd/sep2.png" scale="1" alphatest="blend" zPosition="3" />
+	<eLabel position="50,1010" size="10,40" backgroundColor="red" zPosition="1" />
+	<widget name="key_red" position="75,1010" size="250,40" font="Regular;32" halign="left" foregroundColor="#ffffff" backgroundColor="#101010" transparent="1" zPosition="1" />
+</screen>
