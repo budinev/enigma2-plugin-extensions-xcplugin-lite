@@ -17,6 +17,7 @@
 	<map context="nStreamPlayerPlaylist">
         <key id="KEY_EXIT" mapto="homePlaylist" flags="m" />
 		<key id="KEY_ESC" mapto="homePlaylist" flags="m" />    
+
 		<key id="KEY_OK" mapto="ok" flags="m" />    
        	<key id="KEY_RECORD" mapto="check_download_vod" flags="b" />        
        	<key id="KEY_VIDEO" mapto="taskManager" flags="b" />
@@ -24,21 +25,22 @@
        	<key id="KEY_7" mapto="taskManager" flags="m" /> 
         <key id="KEY_BLUE" mapto="xcPlay" flags="m" />
        	<key id="KEY_LIST" mapto="showMediaPlayer" flags="b" /> 
-        
        	<key id="KEY_3" mapto="showMovies" flags="m" />     
-        
        	<key id="KEY_HELP" mapto="help" flags="m" /> 
-       	<key id="KEY_TV" mapto="listUpdate" flags="m" />  
+        
+    <!--   	<key id="KEY_TV" mapto="listUpdate" flags="m" />    -->
 		<key id="KEY_GREEN" mapto="save_list" flags="m" /> 
         <key id="KEY_YELLOW" mapto="removelist" flags="m" />
  		<key id="KEY_STOP" mapto="exitPlugin" flags="m" />  
        	<key id="KEY_RED" mapto="exit_box" flags="m" />  
 		<key id="KEY_INFO" mapto="info" flags="m" />    
        	<key id="KEY_EPG" mapto="moreInfo" flags="m" />        
-        <key id="KEY_0" mapto="moreInfo" flags="m" />        
-      	<key id="KEY_MENU" mapto="menu" flags="m" />   
+        <key id="KEY_0" mapto="moreInfo" flags="m" />  
+      	<key id="KEY_8" mapto="menu" flags="m" />           
+       	<key id="KEY_MENU" mapto="menu" flags="m" />          
 		<key id="KEY_POWER" mapto="power" flags="m" />
         <key id="KEY_5" mapto="info" flags="m" />          
+
 	</map>	
 
 	<map context="nStreamPlayerIPTV">
@@ -48,9 +50,7 @@
 		<key id="KEY_ESC" mapto="toChListIPTV" flags="m" />	    
    		<key id="KEY_HELP" mapto="help" flags="m" />    
        	<key id="KEY_EPG" mapto="moreInfo" flags="m" /> 
-        
         <key id="KEY_0" mapto="moreInfo" flags="m" />
-        
 		<key id="KEY_LEFT" mapto="prevChannelIPTV" flags="m" />
 		<key id="KEY_RIGHT" mapto="nextChannelIPTV" flags="m" />
 		<key id="KEY_CHANNELUP" mapto="nextChannelIPTV" flags="m" />
@@ -74,9 +74,7 @@
 		<key id="KEY_TV" mapto="stopVOD" flags="m" /> 
        	<key id="KEY_BLUE" mapto="autoplay" flags="m" />    
        	<key id="KEY_2" mapto="restartVideo" flags="m" />
-
         <key id="KEY_0" mapto="moreInfo" flags="m" />
-        
 		<key id="KEY_OK" mapto="ok" flags="m" />
 		<key id="KEY_POWER" mapto="power" flags="m" />
         <key id="KEY_LEFT" mapto="prevVideo" flags="m" />
@@ -84,7 +82,6 @@
 		<key id="KEY_CHANNELDOWN" mapto="prevVideo" flags="m" />
 		<key id="KEY_CHANNELUP" mapto="nextVideo" flags="m" />
    		<key id="KEY_HELP" mapto="help" flags="m" />
-		<key id="KEY_POWER" mapto="power" flags="m" />         
         
 	</map>
 
@@ -94,10 +91,10 @@
 		<key id="KEY_EXIT" mapto="cancel" flags="m" />
 		<key id="KEY_ESC" mapto="cancel" flags="m" />
         <key id="KEY_RED" mapto="cancel" flags="m" />
-       	<key id="KEY_HELP" mapto="help" flags="b"/>         
 	</map>
 	
 	<map context="xc_epg">
+		<key id="KEY_BACK" mapto="cancel" flags="m" />    
 		<key id="KEY_0" mapto="cancel" flags="m" />
 		<key id="KEY_OK" mapto="cancel" flags="m" />
 		<key id="KEY_EXIT" mapto="cancel" flags="m" />
@@ -106,6 +103,7 @@
 	</map>	
 
 	<map context="OpenServer">
+
         <key id="KEY_EXIT" mapto="exit" flags="m" />
 		<key id="KEY_ESC" mapto="cancel" flags="m" />
 	    <key id="KEY_RED" mapto="red" flags="m" />
