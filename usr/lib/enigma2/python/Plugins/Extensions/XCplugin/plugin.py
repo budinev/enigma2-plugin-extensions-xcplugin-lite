@@ -79,8 +79,8 @@ global nochange
 nochange = False
 
 # VERSION
-version=" 2.1"
-currversion = '2.1'
+version=" 2.0"
+currversion = '2.0'
 namefolder='XC-Lite'
 descriptionplug='XtreamCode Lite Version '
 
