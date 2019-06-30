@@ -26,8 +26,9 @@
 	<!-- Config -->
 	<widget name="config" position="520,85" size="730,390" itemHeight="30" foregroundColor="#808080" foregroundColorSelected="#ffffff" backgroundColor="#0b2049" backgroundColorSelected="#014c83" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
 	<widget name="info2" position="540,540" size="700,30" font="Regular;22" halign="center" foregroundColor="yellow" transparent="1" zPosition="1" />
-	<widget name="description" position="580,620" size="660,42" font="Regular;20" halign="center" foregroundColor="#009900" transparent="1" zPosition="2" />    
-	<!-- Buttons Colors -->
+    <widget name="description" position="543,582" size="701,66" font="Regular;20" halign="center" foregroundColor="#009900" transparent="1" zPosition="2" />
+
+<!-- Buttons Colors -->
 	<ePixmap position="30,655" size="1220,2"  pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin/skin/hd/sep2.png" alphatest="blend" scale="1" zPosition="3" />
 	<eLabel position="30,670" size="5,25" backgroundColor="red" zPosition="1" />
 	<widget name="key_red" position="45,670" size="200,30" font="Regular;20" halign="left" foregroundColor="#ffffff" backgroundColor="#101010" transparent="1" zPosition="1" />
